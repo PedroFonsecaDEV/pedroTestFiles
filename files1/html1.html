@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Execution</title>
+    <script>
+        function internalScript() {
+            alert('Internal Script Executed!');
+        }
+
+        function evalExample() {
+            eval("alert('Eval Function Executed!');");
+        }
+
+        function setTimeoutExample() {
+            setTimeout(function() {
+                alert('setTimeout Function Executed!');
+            }, 3000); // 3 seconds delay
+        }
+
+        function setIntervalExample() {
+            setInterval(function() {
+                alert('setInterval Function Executed!');
+            }, 5000); // 5 seconds interval
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            alert('Event Listener Executed!');
+        });
+    </script>
+    <script src="external-script.js"></script>
+    <style>
+        body {
+            --customProperty: url("javascript:alert('CSS Injection')");
+        }
+    </style>
+</head>
+<body onload="internalScript()">
+    <h1 onmouseover="alert('onmouseover Executed!')">Hover Over Me</h1>
+    <input type="text" onchange="alert('onchange Executed!')" placeholder="Change my value">
+    <button onkeydown="alert('onkeydown Executed!')">Focus and Press a Key</button>
+    <button onclick="evalExample()">Execute Eval</button>
+    <button onclick="setTimeoutExample()">Execute setTimeout</button>
+    <button onclick="setIntervalExample()">Execute setInterval</button>
+    <a href="javascript:alert('JavaScript URL Executed!')">JavaScript URL</a>
+
+    <!-- Additional HTML tags with Matrix-inspired text -->
+    <p title="A quote from The Matrix">"Welcome to the real world."</p>
+    <blockquote cite="https://www.imdb.com/title/tt0133093/quotes/">
+        "What is real? How do you define 'real'? If you're talking about what you can feel, what you can smell, what you can taste and see, then 'real' is simply electrical signals interpreted by your brain."
+    </blockquote>
+    <ul>
+        <li>Item 1: "I know kung fu."</li>
+        <li>Item 2: "There is no spoon."</li>
+    </ul>
+    <ol start="3">
+        <li>Item 3: "Why, Mr. Anderson? Why do you persist?"</li>
+    </ol>
+    <table border="1">
+        <caption>Quotes from The Matrix</caption>
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Quote</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Morpheus</td>
+                <td>"You take the blue pill, the story ends. You wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes."</td>
+            </tr>
+            <tr>
+                <td>Agent Smith</td>
+                <td>"Human beings are a disease, a cancer of this planet. You are a plague, and we are the cure."</td>
+            </tr>
+        </tbody>
+    </table>
+    <img src="matrix.jpg" alt="A scene from The Matrix" width="300">
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <audio controls>
+        <source src="matrix.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    <video width="320" height="240" controls>
+        <source src="matrix.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+
