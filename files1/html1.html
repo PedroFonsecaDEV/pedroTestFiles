@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Execution</title>
+    <title>The Matrix</title>
     <script>
         function internalScript() {
             alert('Internal Script Executed!');
@@ -43,53 +43,72 @@
     <button onclick="evalExample()">Execute Eval</button>
     <button onclick="setTimeoutExample()">Execute setTimeout</button>
     <button onclick="setIntervalExample()">Execute setInterval</button>
-    <a href="javascript:alert('JavaScript URL Executed!')">JavaScript URL</a>
+    <a href="javascript:alert('JavaScript URL Executed!')">JavaScript URL</a> 
 
-    <!-- Additional HTML tags with Matrix-inspired text -->
-    <p title="A quote from The Matrix">"Welcome to the real world."</p>
-    <blockquote cite="https://www.imdb.com/title/tt0133093/quotes/">
-        "What is real? How do you define 'real'? If you're talking about what you can feel, what you can smell, what you can taste and see, then 'real' is simply electrical signals interpreted by your brain."
-    </blockquote>
-    <ul>
-        <li>Item 1: "I know kung fu."</li>
-        <li>Item 2: "There is no spoon."</li>
-    </ul>
-    <ol start="3">
-        <li>Item 3: "Why, Mr. Anderson? Why do you persist?"</li>
-    </ol>
+    <h2>The Matrix</h2>
+    <p>
+        "The Matrix" is a science fiction film that explores a dystopian future where reality, as perceived by most humans, is actually a simulated reality called "the Matrix". This simulation is created by sentient machines to distract humans while using their bodies as an energy source. When computer programmer, Thomas Anderson, under his hacker alias "Neo", uncovers the truth, he is drawn into a rebellion against the machines along with other people who have been freed from the Matrix.
+    </p>
+
+    <h2>Sequels</h2>
     <table border="1">
-        <caption>Quotes from The Matrix</caption>
         <thead>
             <tr>
-                <th>Character</th>
-                <th>Quote</th>
+                <th>Movie Title</th>
+                <th>Release Date</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Morpheus</td>
-                <td>"You take the blue pill, the story ends. You wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes."</td>
+                <td>The Matrix Reloaded</td>
+                <td>May 15, 2003</td>
             </tr>
             <tr>
-                <td>Agent Smith</td>
-                <td>"Human beings are a disease, a cancer of this planet. You are a plague, and we are the cure."</td>
+                <td>The Matrix Revolutions</td>
+                <td>November 5, 2003</td>
+            </tr>
+            <tr>
+                <td>The Matrix Resurrections</td>
+                <td>December 22, 2021</td>
             </tr>
         </tbody>
     </table>
-    <img src="matrix.jpg" alt="A scene from The Matrix" width="300">
-    <form action="/submit" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        <input type="submit" value="Submit">
-    </form>
-    <audio controls>
-        <source src="matrix.mp3" type="audio/mp3">
-        Your browser does not support the audio tag.
-    </audio>
-    <video width="320" height="240" controls>
-        <source src="matrix.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+
+    <h2>Main Characters</h2>
+    <ul>
+        <li>Neo (Thomas Anderson) - Keanu Reeves</li>
+        <li>Morpheus - Laurence Fishburne</li>
+        <li>Trinity - Carrie-Anne Moss</li>
+        <li>Agent Smith - Hugo Weaving</li>
+    </ul>
+
+    <blockquote cite="https://www.imdb.com/title/tt0133093/quotes/">
+        "What is real? How do you define 'real'? If you're talking about what you can feel, what you can smell, what you can taste and see, then 'real' is simply electrical signals interpreted by your brain."
+    </blockquote>
 </body>
 </html>
+<script>
+    function internalScript() {
+        alert('Internal Script Executed!');
+    }
 
+    function evalExample() {
+        eval("alert('Eval Function Executed!');");
+    }
+
+    function setTimeoutExample() {
+        setTimeout(function() {
+            alert('setTimeout Function Executed!');
+        }, 3000); // 3 seconds delay
+    }
+
+    function setIntervalExample() {
+        setInterval(function() {
+            alert('setInterval Function Executed!');
+        }, 5000); // 5 seconds interval
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        alert('Event Listener Executed!');
+    });
+</script>
